@@ -4,7 +4,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0-beta05'
+        classpath 'com.android.tools.build:gradle:3.6.3'
     }
 }
 
@@ -12,8 +12,6 @@ allprojects {
     tasks.withType(Test).configureEach {
         maxParallelForks = 4
         forkEvery = 100
-        reports.html.required = false
-        reports.junitXml.required = false
     }
 
     repositories {
